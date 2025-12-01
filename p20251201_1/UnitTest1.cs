@@ -10,7 +10,9 @@ namespace p20251201_1
         [Test]
         public void Test1()
         {
-            Assert.Pass();
+            StringAssert.Contains("1","Pelda@valami.hu");
+            StringAssert.Contains("@", "Pelda@valami.hu");
+            StringAssert.Contains(".hu", "Pelda@valami.hu");
         }
     }
 }
